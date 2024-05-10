@@ -1,0 +1,9 @@
+Go to web services
+Select Commerce
+Select API - update transaction
+Give Transaction ID - 287058200
+Search for attribute sq_SummaryListOfProducts
+Replace the value from "DA9##EQUINIX - US##Private Cage With kVA Based Power$$Colocation,3*@*SP.PC.0002*@*Capacity Check Required,Cross Connect - Standard$$,15*@*IC.CC.0002*@*Cage USID not associated,Smart Hands - Hour"
+with {"firstSolutionIBX":"DA9","selectedIBXOperatingUnit":"EQUINIX - US","summary":[{"ProductName":"Private Cage With kVA Based Power","PCF17":"Colocation","SiebelSQU":"SPC00002.PROD","LineNumber":"3","Messages":"3*@*SP.PC.0002*@*Capacity Check Required,"},{"ProductName":"Cross Connect - Standard","PCF17":"",		"SiebelSQU":"CC00001.PROD","LineNumber":"15","Messages":"15*@*IC.CC.0002*@*Cage USID not associated"},{"ProductName":"Smart Hands - Hourly","PCF17":"","SiebelSQU":"CHARGES.NR","LineNumber":"18"}],"ListofProductsIBXLabel":"QuoteIBXList:SPC00002.PROD,CC00001.PROD$*$IBX$*$DA9","listOfBomPartNumbers":"Solution"}
+Search for action_var tag - replace <bm:action_var_name/> with <bm:action_var_name>cleanSave_t</bm:action_var_name>
+Click on Submit 
